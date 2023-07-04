@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Register"
+    android:background="@drawable/regiback">>
+
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                style="@style/headerTextPrimary"
+                android:text="@string/register"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:inputType="text"
+                    android:id="@+id/register_name"
+                    android:maxLines="1"
+                    android:hint="Name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:id="@+id/register_email"
+                    android:hint="@string/login_email_hint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="@color/white"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:hint="@string/login_password_hint"
+                    android:maxLines="1"
+                    android:id="@+id/register_password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="@color/white"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:id="@+id/register_confirm_password"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                    android:hint="Confirm Password"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:text="Register"
+                android:background="@drawable/register_button"
+                app:backgroundTint="@null"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:id="@+id/register_button"/>
+
+            <TextView
+                style="@style/parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/login_text"
+                android:textColor="@color/primaryTextColor"
+                android:text="@string/signup_login_hint"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
