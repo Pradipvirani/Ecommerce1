@@ -9,18 +9,14 @@
     android:orientation="vertical"
     android:background="@color/black">
 
-    <ImageView
-        android:layout_width="@dimen/_120sdp"
-        android:layout_height="@dimen/_120sdp"
-        android:id="@+id/image_view"
-        android:src="@drawable/ecommerce"/>
-    <TextView
+
+
+    <com.airbnb.lottie.LottieAnimationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ecommerce"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="@dimen/_40sdp"
-        android:textAlignment="center"/>
+        android:id="@+id/Lottie_view"
+        app:lottie_rawRes="@raw/ecommerce"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
 
 </LinearLayout>
