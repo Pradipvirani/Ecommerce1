@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
       lottieAnimationView.addAnimatorUpdateListener(valueAnimator -> {
 
       });
-        lottieAnimationView.pauseAnimation();
+        lottieAnimationView.playAnimation();
         if (networkconnected())
       {
           preferences=getSharedPreferences("pre",0);
@@ -41,11 +42,15 @@ public class MainActivity extends AppCompatActivity {
           islogin= preferences.getBoolean("islogin",false);
           if (islogin)
           {
-
+              Intent intent =new Intent(MainActivity.this, Ecommerce.class);
+              startActivity(intent);
+              finish();
           }
           else
           {
-
+              Intent intent =new Intent(MainActivity.this, Login.class);
+              startActivity(intent);
+              finish();
           }
       }
        else
